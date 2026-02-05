@@ -1,0 +1,36 @@
+# Muhammad Amir Mushatq
+# Last but optional 
+Dataset Shape: (200, 5)
+   Unnamed: 0     TV  Radio  Newspaper  Sales
+0           1  230.1   37.8       69.2   22.1
+1           2   44.5   39.3       45.1   10.4
+2           3   17.2   45.9       69.3    9.3
+3           4  151.5   41.3       58.5   18.5
+4           5  180.8   10.8       58.4   12.9
+Index(['Unnamed: 0', 'TV', 'Radio', 'Newspaper', 'Sales'], dtype='object')
+
+Correlation:
+                  TV     Radio  Newspaper     Sales
+TV         1.000000  0.054809   0.056648  0.782224
+Radio      0.054809  1.000000   0.354104  0.576223
+Newspaper  0.056648  0.354104   1.000000  0.228299
+Sales      0.782224  0.576223   0.228299  1.000000
+
+Pakistan
+MODEL: Linear Regression
+India
+MAE : 1.461
+RMSE: 1.782
+R2  : 0.8994
+
+Pakistan
+MODEL: Ridge Regression
+India
+MAE : 1.461
+RMSE: 1.782
+R2  : 0.8994
+
+Final Results:
+                Model       MAE      RMSE        R2
+1   Ridge Regression  1.460766  1.781599  0.899438
+0  Linear Regression  1.460757  1.781600  0.899438

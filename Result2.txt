@@ -1,0 +1,46 @@
+# Result:2
+
+Muhammad Amir Mushtaq
+
+
+Dataset Shape: (768, 7)
+           Region         Date  Frequency  ...   Estimated Employed   Estimated Labour Participation Rate (%)   Area
+0  Andhra Pradesh   31-05-2019    Monthly  ...           11999139.0                                     43.24  Rural
+1  Andhra Pradesh   30-06-2019    Monthly  ...           11755881.0                                     42.05  Rural
+2  Andhra Pradesh   31-07-2019    Monthly  ...           12086707.0                                     43.50  Rural
+3  Andhra Pradesh   31-08-2019    Monthly  ...           12285693.0                                     43.97  Rural
+4  Andhra Pradesh   30-09-2019    Monthly  ...           12256762.0                                     44.68  Rural
+
+[5 rows x 7 columns]
+Index(['Region', ' Date', ' Frequency', ' Estimated Unemployment Rate (%)',
+       ' Estimated Employed', ' Estimated Labour Participation Rate (%)',
+       'Area'],
+      dtype='object')
+c:\Users\Acer\Downloads\Code Alpha Internship\Task Code and Results\Data Scince Internship\Unemployment Analysis with Python.py:32: UserWarning: Parsing dates in  %d-%m-%Y format when dayfirst=False (the default) was specified. Pass `dayfirst=True` or specify a format to silence this warning.
+  df["Date"] = pd.to_datetime(df["Date"])
+
+Missing Values:
+ Region                                     28
+Date                                       28
+Frequency                                  28
+Estimated Unemployment Rate (%)            28
+Estimated Employed                         28
+Estimated Labour Participation Rate (%)    28
+Area                                       28
+dtype: int64
+
+Summary:
+                                 Date  ...  Estimated Labour Participation Rate (%)
+count                            740  ...                               740.000000
+mean   2019-12-12 18:36:58.378378496  ...                                42.630122
+min              2019-05-31 00:00:00  ...                                13.330000
+25%              2019-08-31 00:00:00  ...                                38.062500
+50%              2019-11-30 00:00:00  ...                                41.160000
+75%              2020-03-31 00:00:00  ...                                45.505000
+max              2020-06-30 00:00:00  ...                                72.570000
+std                              NaN  ...                                 8.111094
+
+[8 rows x 4 columns]
+
+Average unemployment before Covid: 9.51
+Average unemployment during/after Covid: 17.78
